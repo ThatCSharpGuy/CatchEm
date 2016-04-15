@@ -4,6 +4,9 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using Telerik.XamarinForms.PrimitivesRenderer.iOS;
+
+[assembly: Xamarin.Forms.ExportRenderer(typeof(Telerik.XamarinForms.Primitives.RadSideDrawer), typeof(Telerik.XamarinForms.PrimitivesRenderer.iOS.SideDrawerRenderer))]
 
 namespace CatchEm.iOS
 {
@@ -12,7 +15,9 @@ namespace CatchEm.iOS
     {
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            new SideDrawerRenderer();
             global::Xamarin.Forms.Forms.Init();
+            Telerik.XamarinForms.Common.iOS.TelerikForms.Init();
 
             LoadApplication(new App());
 
