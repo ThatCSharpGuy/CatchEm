@@ -1,5 +1,5 @@
-﻿using System;
-
+﻿using CatchEm.Pages;
+using System;
 using Xamarin.Forms;
 
 namespace CatchEm
@@ -9,21 +9,7 @@ namespace CatchEm
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children =
-                    {
-                        new Label
-                        {
-                            XAlign = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
+            MainPage = new DrawerPage();
         }
 
         protected override void OnStart()

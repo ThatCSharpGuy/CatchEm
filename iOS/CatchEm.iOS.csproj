@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,7 +8,8 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>CatchEm.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>CatchEm.iOS</AssemblyName>
+    <AssemblyName>CatchEmiOS</AssemblyName>
+    <NuGetPackageImportStamp>9a1c4640</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,51 +77,65 @@
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="Xamarin.iOS" />
-    <Reference Include="Telerik.Xamarin.iOS">
+    <Reference Include="Telerik.Xamarin.iOS, Version=2016.1.324.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.Xamarin.iOS.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.XamarinForms.Chart">
+    <Reference Include="Telerik.XamarinForms.Chart, Version=2016.1.324.210, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.Chart.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.XamarinForms.Common">
-      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.DataControls">
-      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.DataControls.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Input">
-      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.Input.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.Primitives">
-      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.Primitives.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.XamarinForms.ChartRenderer.iOS">
+    <Reference Include="Telerik.XamarinForms.ChartRenderer.iOS, Version=2016.1.324.210, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.ChartRenderer.iOS.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.XamarinForms.Common.iOS">
+    <Reference Include="Telerik.XamarinForms.Common, Version=2016.1.324.210, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Common.iOS, Version=2016.1.324.210, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.Common.iOS.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.XamarinForms.DataControlsRenderer.iOS">
+    <Reference Include="Telerik.XamarinForms.DataControls, Version=2016.1.324.210, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.DataControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.DataControlsRenderer.iOS, Version=2016.1.324.210, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.DataControlsRenderer.iOS.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.XamarinForms.InputRenderer.iOS">
+    <Reference Include="Telerik.XamarinForms.Input, Version=2016.1.324.210, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.Input.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.InputRenderer.iOS, Version=2016.1.324.210, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.InputRenderer.iOS.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Telerik.XamarinForms.PrimitivesRenderer.iOS">
+    <Reference Include="Telerik.XamarinForms.Primitives, Version=2016.1.324.210, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.PrimitivesRenderer.iOS, Version=2016.1.324.210, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Telerik.UI.for.Xamarin.2016.1.324.1\lib\xamarinios10\Telerik.XamarinForms.PrimitivesRenderer.iOS.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Xamarin.Forms.Platform.iOS">
-      <HintPath>..\packages\Xamarin.Forms.2.1.0.6529\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Core">
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Forms.2.1.0.6529\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Xamarin.Forms.Xaml">
-      <HintPath>..\packages\Xamarin.Forms.2.1.0.6529\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Forms.Platform">
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Forms.2.1.0.6529\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.1.0.6529\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.2.1.0.6529\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -130,7 +145,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -138,7 +155,9 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />

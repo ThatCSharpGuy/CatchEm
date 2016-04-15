@@ -9,7 +9,9 @@
 				<OnPlatform x:TypeArguments="x:Double" iOS="150" Android="200" />
 			</primitives:RadSideDrawer.DrawerLength>
 			<primitives:RadSideDrawer.MainContent>
-				<Label Text="Main Content" FontSize="Large" HorizontalOptions="Center" />
+        <StackLayout>
+          
+        </StackLayout>
 			</primitives:RadSideDrawer.MainContent>
 			<primitives:RadSideDrawer.DrawerContent>
 				<StackLayout>
